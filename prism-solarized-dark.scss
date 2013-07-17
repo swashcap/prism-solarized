@@ -79,8 +79,6 @@ pre {
 
 pre[class*="language-"] {
 	&::before {
-		content: "CSS";
-
 		background-color: $solarized_base02;
 		border-top-left-radius: ( $border-radius / .875 );
 		border-top-right-radius: ( $border-radius / .875 );
@@ -94,6 +92,9 @@ pre[class*="language-"] {
 	code {
 		padding-top: ( .5em / .875 );
 	}
+}
+pre.language-markup::before {
+	content: "HTML";
 }
 pre.language-css::before {
 	content: "CSS";
